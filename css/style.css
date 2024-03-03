@@ -1,3 +1,11 @@
 .font-mulish{
     font-family: "Mulish", sans-serif;
 }
+
+.font-inter{
+    font-family: "Inter", sans-serif;
+}
+
+hr{
+    border-top: 1px dashed #12132d40;
+}
