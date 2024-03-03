@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,52 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 <body class="font-mulish">
-    <header></header>
+    <header>
+        <!-- navigation bar section -->
+        <div class="navbar px-5 lg:px-20 py-5 lg:py-8">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li class="font-bold"><a>Home</a></li>
+                  <li class="font-bold"><a>Edit</a></li>
+                  <li class="font-bold"><a>Add</a></li>
+                  <li class="font-bold"><a>Report</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-xl"><img src="images/logo.png" alt=""></a>
+            </div>            
+            <div class="navbar-end">
+                <div class="hidden lg:flex lg:gap-4">
+                    <div class="tooltip" data-tip="Home">
+                        <button class="btn rounded-full w-14 h-14 border-1 border-[#12132d33] 
+                        hover:border-[#12132d33] hover:bg-transparent">
+                            <img src="images/home.png" alt=""></button>
+                    </div>
+                    <div class="tooltip" data-tip="Edit">
+                        <button class="btn rounded-full w-14 h-14 border-1 border-[#12132d33] 
+                        hover:border-[#12132d33] hover:bg-transparent">
+                            <img src="images/edit.png" alt=""></button>
+                    </div>
+                    <div class="tooltip" data-tip="Add">
+                        <button class="btn rounded-full w-14 h-14 border-1 border-[#12132d33] 
+                        hover:border-[#12132d33] hover:bg-transparent">
+                            <img src="images/sign-in.png" alt=""></button>
+                    </div>
+                    <div class="tooltip" data-tip="Report">
+                        <button class="btn rounded-full w-14 h-14 border-1 border-[#12132d33] 
+                        hover:border-[#12132d33] hover:bg-transparent">
+                            <img src="images/flag.png" alt=""></button>
+                    </div>
+                </div>
+              <a class="btn bg-purple-blue text-white font-bold text-lg ml-5 px-10 rounded-3xl border-2 
+              border-purple-blue hover:border-purple-blue hover:bg-transparent hover:text-purple-blue">
+                Sign In</a>
+            </div>
+        </div>
+    </header>
 
     <main></main>
 
@@ -27,7 +72,7 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
+                'purple-blue': '#797DFC',
               }
             }
           }
