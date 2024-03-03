@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,26 +14,33 @@
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
 </head>
+
 <body class="font-mulish">
     <header>
         <!-- navigation bar section -->
         <div class="navbar px-5 lg:px-20 py-5 lg:py-8">
             <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li class="font-bold"><a>Home</a></li>
+                        <li class="font-bold"><a>Edit</a></li>
+                        <li class="font-bold"><a>Add</a></li>
+                        <li class="font-bold"><a>Report</a></li>
+                    </ul>
                 </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                  <li class="font-bold"><a>Home</a></li>
-                  <li class="font-bold"><a>Edit</a></li>
-                  <li class="font-bold"><a>Add</a></li>
-                  <li class="font-bold"><a>Report</a></li>
-                </ul>
-              </div>
-              <a class="btn btn-ghost text-xl"><img src="images/logo.png" alt=""></a>
-            </div>            
+                <a class="btn btn-ghost text-xl"><img src="images/logo.png" alt=""></a>
+            </div>
             <div class="navbar-end">
                 <div class="hidden lg:flex lg:gap-4">
                     <div class="tooltip" data-tip="Home">
@@ -56,9 +64,56 @@
                             <img src="images/flag.png" alt=""></button>
                     </div>
                 </div>
-              <a class="btn bg-purple-blue text-white font-bold text-lg ml-5 px-10 rounded-3xl border-2 
+                <a class="btn bg-purple-blue text-white font-bold text-lg ml-5 px-10 rounded-3xl border-2 
               border-purple-blue hover:border-purple-blue hover:bg-transparent hover:text-purple-blue">
-                Sign In</a>
+                    Sign In</a>
+            </div>
+        </div>
+
+        <!-- banner section -->
+        <div class="banner-section px-5 lg:px-20 py-5 lg:py-5">
+            <div class="bg-cover bg-no-repeat bg-[url(./images/bgbanner.png)] bg-[#12132D] rounded-2xl">
+                <!-- <div class="hero-overlay bg-opacity-60"></div> -->
+                <div class="text-white py-10 lg:py-20 px-10 lg:px-32">
+                    <div class="flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-0">
+                        <div class="banner-content">
+                            <h1 class="leading-snug mb-5 text-5xl font-black">Welcome to the <br>
+                                <span class="bg-gradient-to-r from-[#9C79FC] to-[#797DFC] 
+                             text-transparent bg-clip-text">ReTro</span> Forum
+                            </h1>
+                            <p class="lg:w-4/5 mb-5 font-medium text-lg">Share your favorite opinion and win and wp forum
+                                coffee
+                                mug!</p>
+                            <div class="search-section relative">
+                                <input class="py-4 px-4 rounded-3xl w-full lg:w-4/6" type="text"
+                                    placeholder="Search here anything">
+                                <button class="btn bg-purple-blue text-white font-bold text-base rounded-3xl 
+                                border-2 border-purple-blue hover:border-purple-blue hover:bg-transparent 
+                                hover:text-purple-blue absolute left-3/4 lg:left-1/2 top-1">
+                                    Search</button>
+                            </div>
+                        </div>
+                        <div class="counter-section bg-white px-8 py-4 text-black-hue font-medium text-xl 
+                        rounded-2xl">
+                            <div class="counter flex flex-row justify-between gap-10 py-4">
+                                <p>Registered Users</p>
+                                <p>01</p>
+                            </div>
+                            <div class="counter flex flex-row justify-between gap-10 pb-4">
+                                <p>Forum</p>
+                                <p>05</p>
+                            </div>
+                            <div class="counter flex flex-row justify-between gap-10 pb-4">
+                                <p>Topics</p>
+                                <p>01</p>
+                            </div>
+                            <div class="counter flex flex-row justify-between gap-10 pb-4">
+                                <p>Replies</p>
+                                <p>01</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -66,19 +121,21 @@
     <main></main>
 
     <footer></footer>
-    
+
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                'purple-blue': '#797DFC',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        'purple-blue': '#797DFC',
+                        'black-hue': '#12132dcc',
+                    }
+                }
             }
-          }
         }
     </script>
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
