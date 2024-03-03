@@ -76,4 +76,5 @@ const readPost = (title, viewCount) =>{
     readCount.innerText = readPostCount;
 }
 
+
 loadPost();
