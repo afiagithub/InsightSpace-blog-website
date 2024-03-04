@@ -9,3 +9,9 @@
 hr{
     border-top: 1px dashed #12132d40;
 }
+
+.lat-post-para{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}

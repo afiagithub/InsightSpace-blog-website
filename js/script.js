@@ -109,4 +109,43 @@ const showSpinner = (isLoading) => {
         loadSpinner.classList.add('hidden');
     }
 }
+
+const latestPost = async () => {
+    const res = await fetch('https://openapi.programming-hero.com/api/retro-forum/latest-posts');
+    const data = await res.json();
+    const latestPosts = data;
+
+    const latestContainer = document.getElementById("latest-container");
+    latestContainer.textContent = '';
+
+    latestPosts.forEach(latPost => {
+        const postCard = document.createElement("div");
+        postCard.classList = `card w-96 border-2 border-[#12132d26] p-4`;
+
+        postCard.innerHTML = `<figure><img class="rounded-xl" src="${latPost.cover_image}" alt="" /></figure>
+        <div class="card-body p-0">
+            <div class="date-section flex gap-2 mt-4">
+                <img src="images/calendar.png" alt="">
+                <p class="text-[#12132d99]">${latPost.author.posted_date?latPost.author.posted_date:'Unknown'}</p>
+            </div>
+            
+            <h2 class="card-title font-extrabold text-lg py-2">
+                ${latPost.title}
+            </h2>
+          <p class="lat-post-para text-ellipsis overflow-hidden text-[#12132d99]">${latPost.description}</p>
+          <div class="author-section flex gap-4 items-center my-2">
+            <img class="w-12 h-12 rounded-full" src="${latPost.profile_image}" alt="">
+            <div class="author-details">
+                <h4 class="font-bold">${latPost.author.name}</h4>
+                <p class="text-[#12132d99] text-sm">${latPost.author.designation?latPost.author.designation:'Unknown'}</p>
+            </div>
+          </div>
+        </div>`;
+
+        latestContainer.appendChild(postCard);
+    });
+}
+
 loadPost();
+
+latestPost();
