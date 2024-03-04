@@ -17,6 +17,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
+    
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body class="font-mulish">
@@ -87,8 +90,8 @@
                                 coffee
                                 mug!</p>
                             <div class="search-section relative">
-                                <input id="search-input" class="py-4 px-4 rounded-3xl w-full lg:w-4/6 text-black" type="text"
-                                    placeholder="Search here anything">
+                                <input id="search-input" class="py-4 px-4 rounded-3xl w-full lg:w-4/6 text-black"
+                                    type="text" placeholder="Search here anything">
                                 <button onclick="searchCategory()" class="btn bg-purple-blue text-white font-bold text-base rounded-3xl 
                                 border-2 border-purple-blue hover:border-purple-blue hover:bg-transparent 
                                 hover:text-purple-blue absolute left-3/4 lg:left-1/2 top-1">
@@ -143,7 +146,7 @@
                         <h3 class="font-bold text-xl">Title</h3>
                         <p class="font-inter text-sm">Mark as read(<span id="read-count">0</span>)</p>
                     </div>
-                    <div id="read-post-content" class="read-content">                        
+                    <div id="read-post-content" class="read-content">
                     </div>
                 </div>
             </div>
@@ -153,14 +156,15 @@
         <div class="register-section px-5 lg:px-20 text-white">
             <div class="hero bg-[#12132D] rounded-2xl px-16 py-6">
                 <div class="hero-content flex-col lg:flex-row-reverse">
-                  <img src="./images/joinforum.png" class="" />
-                  <div>
-                    <h1 class="text-4xl font-black">Join Our Forum</h1>
-                    <p class="py-6 font-normal">Share your favorite opinion and win and wp forum coffee mug! Yes, you can run unit tests and view the results directly within the app. </p>
-                    <a class="btn bg-purple-blue text-white font-bold text-lg px-10 rounded-3xl border-2 
+                    <img src="./images/joinforum.png" class="" />
+                    <div>
+                        <h1 class="text-4xl font-black">Join Our Forum</h1>
+                        <p class="py-6 font-normal">Share your favorite opinion and win and wp forum coffee mug! Yes,
+                            you can run unit tests and view the results directly within the app. </p>
+                        <a class="btn bg-purple-blue text-white font-bold text-lg px-10 rounded-3xl border-2 
               border-purple-blue hover:border-purple-blue hover:bg-transparent hover:text-purple-blue">
-              Registered Now</a>
-                  </div>
+                            Registered Now</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -173,13 +177,34 @@
                     within the app. The integrated
                     testing features allow for a streamlined .</p>
             </div>
-            <div id="latest-container" class="latest-content mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center">
-                
+            <div id="latest-container"
+                class="latest-content mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center">
+
             </div>
         </div>
     </main>
 
-    <footer></footer>
+    <footer class="text-center py-12 lg:py-24 bg-[#12132d0d] text-black">
+        <aside>
+            <h2 class="font-black text-4xl">ReTro</h2>
+            <p class="font-normal text-black-hue text-base w-4/5 lg:w-3/5 mt-4 mb-8 mx-auto">
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+                Latin literature from 45 BC
+            </p>            
+        </aside>
+        <div class="icons-section flex flex-row gap-5 justify-center my-6">
+            <p class="text-2xl"><i class="fa-brands fa-twitter"></i></p>
+            <p class="text-2xl"><i class="fa-brands fa-facebook-f"></i></p>
+            <p class="text-2xl"><i class="fa-brands fa-instagram"></i></p>
+            <p class="text-2xl"><i class="fa-brands fa-github"></i></p>
+        </div>
+        <div class="flex flex-col w-full">
+            <div class="divider w-4/5 mx-auto"></div> 
+            <div class="grid place-items-center">
+                <p class="text-black-hue">2017, All Rights Reserved.</p>
+            </div>
+        </div>               
+    </footer>
 
     <script>
         tailwind.config = {
