@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B9A6-Retro-Forum</title>
+    <title>B9A6-Online-Forum</title>
 
     <link rel="stylesheet" href="css/style.css">
     <!-- tailwind css & daisyUI -->
@@ -17,7 +17,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
-    
+
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -43,7 +43,9 @@
                         <li class="font-bold"><a>Report</a></li>
                     </ul>
                 </div>
-                <a class="btn btn-ghost text-xl"><img src="images/logo.png" alt=""></a>
+                <a class="btn btn-ghost">
+                    <p class="text-4xl font-black">InsightSpace</p>
+                </a>
             </div>
             <div class="navbar-end">
                 <div class="hidden lg:flex lg:gap-4">
@@ -83,12 +85,10 @@
                         <div class="banner-content">
                             <h1 class="leading-snug mb-5 text-5xl font-black">Welcome to the <br>
                                 <span class="bg-gradient-to-r from-[#9C79FC] to-[#797DFC] 
-                             text-transparent bg-clip-text">ReTro</span> Forum
+                             text-transparent bg-clip-text">InsightSpace</span> Forum
                             </h1>
-                            <p class="lg:w-4/5 mb-5 font-medium text-lg">Share your favorite opinion and win and wp
-                                forum
-                                coffee
-                                mug!</p>
+                            <p class="lg:w-4/5 mb-5 font-medium text-lg">A
+                                Hub for Collaborative Learning and Insightful Discussions.</p>
                             <div class="search-section relative">
                                 <input id="search-input" class="py-4 px-4 rounded-3xl w-full lg:w-4/6 text-black"
                                     type="text" placeholder="Search here anything">
@@ -125,12 +125,12 @@
 
     <main>
         <!-- All post section -->
-        <div class="post-section px-5 lg:px-20 py-5 lg:py-20">
+        <div class="post-section px-5 lg:px-20 py-10 lg:py-20">
             <div class="post-heading text-center mb-8">
                 <h1 class="font-black text-4xl">Let's Discuss</h1>
-                <p class="font-inter py-8 w-3/5 mx-auto">Yes, you can run unit tests and view the results directly
-                    within the app. The integrated
-                    testing features allow for a streamlined .</p>
+                <p class="font-inter py-4 lg:py-8 w-4/5 lg:w-3/5 mx-auto">Welcome to our online forum 'InsightSpace': A
+                    Hub for Collaborative Learning and Insightful Discussions. Join the conversation and let your voice
+                    be heard.</p>
             </div>
 
             <!-- spinner section -->
@@ -153,14 +153,15 @@
         </div>
 
         <!-- register section -->
-        <div class="register-section px-5 lg:px-20 text-white">
-            <div class="hero bg-[#12132D] rounded-2xl px-16 py-6">
-                <div class="hero-content flex-col lg:flex-row-reverse">
+        <div class="register-section px-5 lg:px-20 text-white text-center lg:text-left">
+            <div class="hero bg-[#12132D] rounded-2xl px-8 lg:px-16 py-6">
+                <div class="hero-content flex-col lg:flex-row-reverse gap-5 lg:gap-0">
                     <img src="./images/joinforum.png" class="" />
                     <div>
                         <h1 class="text-4xl font-black">Join Our Forum</h1>
-                        <p class="py-6 font-normal">Share your favorite opinion and win and wp forum coffee mug! Yes,
-                            you can run unit tests and view the results directly within the app. </p>
+                        <p class="py-6 font-normal">Welcome to our online forum 'InsightSpace': A
+                            Hub for Collaborative Learning and Insightful Discussions. Join the conversation and let
+                            your voice be heard.</p>
                         <a class="btn bg-purple-blue text-white font-bold text-lg px-10 rounded-3xl border-2 
               border-purple-blue hover:border-purple-blue hover:bg-transparent hover:text-purple-blue">
                             Registered Now</a>
@@ -170,12 +171,10 @@
         </div>
 
         <!-- latest posts section -->
-        <div class="latestPost-section px-5 lg:px-20 py-5 lg:py-24">
+        <div class="latestPost-section px-5 lg:px-20 py-12 lg:py-24">
             <div class="latest-heading text-center">
                 <h1 class="font-black text-4xl">Latest Posts</h1>
-                <p class="font-inter py-8 w-3/5 mx-auto">Yes, you can run unit tests and view the results directly
-                    within the app. The integrated
-                    testing features allow for a streamlined .</p>
+                <p class="font-inter py-4 lg:py-8 w-4/5 lg:w-3/5 mx-auto">Fresh From the Forum: Latest Discussions and Updates. Catch Up on the Buzz.</p>
             </div>
             <div id="latest-container"
                 class="latest-content mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center">
@@ -188,9 +187,9 @@
         <aside>
             <h2 class="font-black text-4xl">ReTro</h2>
             <p class="font-normal text-black-hue text-base w-4/5 lg:w-3/5 mt-4 mb-8 mx-auto">
-                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
-                Latin literature from 45 BC
-            </p>            
+                InsightSpace is a hub for Collaborative Learning and Insightful Discussions. Join the conversation and
+                let your voice be heard.
+            </p>
         </aside>
         <div class="icons-section flex flex-row gap-5 justify-center my-6">
             <p class="text-2xl"><i class="fa-brands fa-twitter"></i></p>
@@ -199,11 +198,11 @@
             <p class="text-2xl"><i class="fa-brands fa-github"></i></p>
         </div>
         <div class="flex flex-col w-full">
-            <div class="divider w-4/5 mx-auto"></div> 
+            <div class="divider w-4/5 mx-auto"></div>
             <div class="grid place-items-center">
                 <p class="text-black-hue">2017, All Rights Reserved.</p>
             </div>
-        </div>               
+        </div>
     </footer>
 
     <script>
