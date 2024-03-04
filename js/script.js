@@ -20,7 +20,7 @@ const displayPost = (posts) =>{
         postCard.classList = `post flex gap-4 mb-6 lg:gap-10 bg-[#797dfc1a] py-8 px-5 rounded-2xl`;
         
         postCard.innerHTML = `<div class="indicator">
-            <span class="indicator-item badge badge-secondary"></span>
+            <span class="indicator-item badge ${post.isActive?'bg-[#10B981]':'bg-[#FF3434]'} border-none"></span>
             <div class="grid w-24 h-24 bg-base-300 place-items-center">
                 <img class="rounded-2xl" src="${post.image}" alt="">
             </div>
@@ -109,5 +109,4 @@ const showSpinner = (isLoading) => {
         loadSpinner.classList.add('hidden');
     }
 }
-
 loadPost();
